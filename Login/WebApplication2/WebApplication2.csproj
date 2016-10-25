@@ -58,19 +58,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcessoPublico\WebFormLoginCreate.aspx" />
-    <Content Include="AddEvento.aspx" />
-    <Content Include="crud2.aspx" />
-    <Content Include="EditarEvento.aspx" />
-    <Content Include="ErroNãoÉADM.aspx" />
-    <Content Include="EventoUsuario.aspx" />
-    <Content Include="Login.aspx" />
-    <Content Include="usuario.aspx" />
+    <Content Include="Administrador\AddEvento.aspx" />
+    <Content Include="JoeUser\ErroNãoÉADM.aspx" />
+    <Content Include="Login1.aspx" />
+    <Content Include="Administrador\Eventos.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="JoeUser\usuario.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Administrador\WebFormAdmin.aspx" />
-    <Content Include="JoeUser\WebFormJoe.aspx" />
-    <Content Include="WebFormMenu.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="JoeUser\EventoUsuario.aspx" />
+    <Content Include="Administrador\ADMHome.aspx" />
+    <Content Include="Administrador\EditarEventoADM.aspx" />
+    <Content Include="JoeUser\HomeUsuario.aspx" />
+    <Content Include="teste1.aspx" />
+    <Content Include="teste2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcessoPublico\WebFormLoginCreate.aspx.cs">
@@ -80,80 +83,113 @@
     <Compile Include="AcessoPublico\WebFormLoginCreate.aspx.designer.cs">
       <DependentUpon>WebFormLoginCreate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddEvento.aspx.cs">
+    <Compile Include="Administrador\AddEvento.aspx.cs">
       <DependentUpon>AddEvento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddEvento.aspx.designer.cs">
+    <Compile Include="Administrador\AddEvento.aspx.designer.cs">
       <DependentUpon>AddEvento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="crud2.aspx.cs">
-      <DependentUpon>crud2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="crud2.aspx.designer.cs">
-      <DependentUpon>crud2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EditarEvento.aspx.cs">
-      <DependentUpon>EditarEvento.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EditarEvento.aspx.designer.cs">
-      <DependentUpon>EditarEvento.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ErroNãoÉADM.aspx.cs">
+    <Compile Include="JoeUser\ErroNãoÉADM.aspx.cs">
       <DependentUpon>ErroNãoÉADM.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ErroNãoÉADM.aspx.designer.cs">
+    <Compile Include="JoeUser\ErroNãoÉADM.aspx.designer.cs">
       <DependentUpon>ErroNãoÉADM.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EventoUsuario.aspx.cs">
-      <DependentUpon>EventoUsuario.aspx</DependentUpon>
+    <Compile Include="ImagemHandler.ashx.cs">
+      <DependentUpon>ImagemHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EventoUsuario.aspx.designer.cs">
-      <DependentUpon>EventoUsuario.aspx</DependentUpon>
+    <Compile Include="Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Administrador\Eventos.aspx.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Administrador\Eventos.aspx.designer.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="usuario.aspx.cs">
+    <Compile Include="JoeUser\usuario.aspx.cs">
       <DependentUpon>usuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="usuario.aspx.designer.cs">
+    <Compile Include="JoeUser\usuario.aspx.designer.cs">
       <DependentUpon>usuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\WebFormAdmin.aspx.cs">
-      <DependentUpon>WebFormAdmin.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrador\WebFormAdmin.aspx.designer.cs">
-      <DependentUpon>WebFormAdmin.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="JoeUser\WebFormJoe.aspx.cs">
-      <DependentUpon>WebFormJoe.aspx</DependentUpon>
+    <Compile Include="JoeUser\EventoUsuario.aspx.cs">
+      <DependentUpon>EventoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="JoeUser\WebFormJoe.aspx.designer.cs">
-      <DependentUpon>WebFormJoe.aspx</DependentUpon>
+    <Compile Include="JoeUser\EventoUsuario.aspx.designer.cs">
+      <DependentUpon>EventoUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormMenu.aspx.cs">
-      <DependentUpon>WebFormMenu.aspx</DependentUpon>
+    <Compile Include="Administrador\ADMHome.aspx.cs">
+      <DependentUpon>ADMHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormMenu.aspx.designer.cs">
-      <DependentUpon>WebFormMenu.aspx</DependentUpon>
+    <Compile Include="Administrador\ADMHome.aspx.designer.cs">
+      <DependentUpon>ADMHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\EditarEventoADM.aspx.cs">
+      <DependentUpon>EditarEventoADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\EditarEventoADM.aspx.designer.cs">
+      <DependentUpon>EditarEventoADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoeUser\HomeUsuario.aspx.cs">
+      <DependentUpon>HomeUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoeUser\HomeUsuario.aspx.designer.cs">
+      <DependentUpon>HomeUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teste1.aspx.cs">
+      <DependentUpon>teste1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teste1.aspx.designer.cs">
+      <DependentUpon>teste1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teste2.aspx.cs">
+      <DependentUpon>teste2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teste2.aspx.designer.cs">
+      <DependentUpon>teste2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcessoPublico\Web.config" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="ImagemHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
