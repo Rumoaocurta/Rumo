@@ -100,16 +100,28 @@ namespace WebApplication2
                 // Le o numero da linha selecionada
                 int index = Convert.ToInt32(e.CommandArgument);
 
-                // Copia o conteúdo da primeira célula da linha -> Código do Livro
+                // Copia o conteúdo da primeira célula da linha
                 codigo = gdvImagens.Rows[index].Cells[0].Text;
 
                 
-                // Grava código do Livro na sessão
+                // Grava código na sessão
                 Session["foto_id"] = codigo;
 
                 // Chama a tela de edição
                 Response.Redirect("~\\Detalhes.aspx?id_foto=" + codigo);
-            }   
+            }
+            if (e.CommandName == "Favoritar")
+            {
+                SqlConnection aSQLCon = new SqlConnection(strcon);
+                aSQLCon.Open();
+                string codigo;
+                int index = Convert.ToInt32(e.CommandArgument);
+                codigo = gdvImagens.Rows[index].Cells[0].Text;
+                SqlCommand aSQL;
+                aSQL = new SqlCommand("INSERT INTO Lista_Favoritos(lista_id, publicacao_id) VALUES (1, @pub_id)", aSQLCon);
+                aSQL.Parameters.AddWithValue("@pub_id", codigo);
+                aSQL.ExecuteNonQuery();
+            }  
         }
     }
 }

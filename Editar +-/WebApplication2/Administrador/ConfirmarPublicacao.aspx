@@ -27,6 +27,9 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Fotos %>" SelectCommand="SELECT * FROM [EnvioDosUsuariosFoto2]"></asp:SqlDataSource>
 
 
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/ADMHome.aspx">Voltar</asp:HyperLink>
+
+
     <br/>
 
     

@@ -86,6 +86,7 @@
     <Content Include="Administrador\ConfirmarPublicacao.aspx" />
     <Content Include="DetalheEvento.aspx" />
     <Content Include="favorito.aspx" />
+    <Content Include="JoeUser\Favoritos.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcessoPublico\WebFormLoginCreate.aspx.cs">
@@ -118,6 +119,9 @@
     </Compile>
     <Compile Include="Administrador\imagem.ashx.cs">
       <DependentUpon>imagem.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="JoeUser\imagemfav.ashx.cs">
+      <DependentUpon>imagemfav.ashx</DependentUpon>
     </Compile>
     <Compile Include="JoeUser\ErroNãoÉADM.aspx.cs">
       <DependentUpon>ErroNãoÉADM.aspx</DependentUpon>
@@ -228,12 +232,20 @@
     <Compile Include="favorito.aspx.designer.cs">
       <DependentUpon>favorito.aspx</DependentUpon>
     </Compile>
+    <Compile Include="JoeUser\Favoritos.aspx.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoeUser\Favoritos.aspx.designer.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcessoPublico\Web.config" />
     <Content Include="MasterPage.Master" />
     <Content Include="ImagemHandler.ashx" />
     <Content Include="Administrador\imagem.ashx" />
+    <Content Include="JoeUser\imagemfav.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

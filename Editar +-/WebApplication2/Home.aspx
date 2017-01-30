@@ -75,6 +75,8 @@
 
         <asp:ButtonField CommandName="Comentarios" Text="Comentários" />
 
+        <asp:ButtonField CommandName="Favoritar" Text="Favoritar" />
+
     </Columns>
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
     <HeaderStyle BackColor="#333333" ForeColor="White" Font-Bold="True"></HeaderStyle>
