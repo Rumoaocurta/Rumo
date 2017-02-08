@@ -83,3 +83,8 @@ C:\Users\20141011110360\Documents\GitHub\Rumo\Editar +-\WebApplication2\bin\WebA
 C:\Users\20141011110360\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
 C:\Users\20141011110360\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\20141011110360\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\20141011110166\Documents\GitHub\Rumo\Editar +-\WebApplication2\bin\WebApplication2.dll
+C:\Users\20141011110166\Documents\GitHub\Rumo\Editar +-\WebApplication2\bin\WebApplication2.pdb
+C:\Users\20141011110166\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+C:\Users\20141011110166\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\20141011110166\Documents\GitHub\Rumo\Editar +-\WebApplication2\obj\Debug\WebApplication2.pdb
