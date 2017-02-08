@@ -10,7 +10,7 @@
 namespace WebApplication2 {
     
     
-    public partial class WebForm5 {
+    public partial class WebForm14 {
         
         /// <summary>
         /// HyperLink1 control.
@@ -20,24 +20,6 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-        
-        /// <summary>
-        /// txtDescricao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescricao;
-        
-        /// <summary>
-        /// arquivoUploadImagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload arquivoUploadImagem;
         
         /// <summary>
         /// HyperLink2 control.
@@ -67,12 +49,12 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
         
         /// <summary>
-        /// btnUpload control.
+        /// HyperLink5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpload;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ADMHome.aspx.cs" Inherits="WebApplication2.WebForm5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ADMHome.aspx.cs" Inherits="WebApplication2.WebForm14" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
     .auto-style6 {
@@ -27,23 +27,17 @@
 
 
         <table style="width: 100%;">
-            <tr>
-                <td class="auto-style6">&nbsp;</td>
-                <td><asp:TextBox ID="txtDescricao" runat="server" BackColor="#FFFFCC" Height="97px" TextMode="MultiLine" Width="260px"></asp:TextBox></td>
-                <td>&nbsp;</td>
+            
             </tr>
             <tr>
-                <td class="auto-style6">&nbsp;</td>
-                <td>Imagem:<asp:FileUpload ID="arquivoUploadImagem" runat="server" Width="350px" /></td>
                 <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td class="auto-style6">
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Administrador/Eventos.aspx">Editar eventos</asp:HyperLink><br/>
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Administrador/ConfirmarPublicacao.aspx">Confirmar Publucações de usuários</asp:HyperLink><br/>
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Administrador/AddEvento.aspx">Postar Evento</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Administrador/AddEvento.aspx">Postar Evento</asp:HyperLink><br/>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Administrador/PostarFoto.aspx">Postar Foto</asp:HyperLink><br/>
                 </td>
-                <td><asp:Button ID="btnUpload" runat="server" Text="Enviar Arquivo" onclick="btnUpload_Click" /></td>
+                
                 <td>&nbsp;</td>
             </tr>
         </table>
