@@ -52,7 +52,7 @@
           </table>
         <table>
     <tr><td class="auto-style16"> &nbsp;</td>
-    <td class="auto-style15"> &nbsp;</td>
+    <td class="auto-style15"> Imagens:</td>
     </tr><tr><td class="auto-style16">&nbsp;</td>
     <td class="auto-style15"> 
        
@@ -69,6 +69,46 @@
     <asp:Image ID="Image1" runat="server" 
             ImageUrl='<%# "ImagemHandler.ashx?ImgID="+ Eval("id") %>' Height="45px" 
             Width="52px"/>
+    </ItemTemplate>
+    </asp:TemplateField>
+        <asp:ButtonField CommandName="Curtir" Text="Curtir" />
+
+        <asp:ButtonField CommandName="Comentarios" Text="Comentários" />
+
+        <asp:ButtonField CommandName="Favoritar" Text="Favoritar" />
+
+    </Columns>
+            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+    <HeaderStyle BackColor="#333333" ForeColor="White" Font-Bold="True"></HeaderStyle>
+            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+            <SortedDescendingHeaderStyle BackColor="#242121" />
+    </asp:GridView>
+    </td>
+    </tr><tr><td class="auto-style16">
+    </td>
+    <td class="auto-style15">
+        Videos:</td>
+    </tr>
+            <tr><td class="auto-style16">&nbsp;</td>
+    <td class="auto-style15"> 
+       
+        <asp:GridView ID="gdvVideos" CssClass="Gridview" runat="server" AutoGenerateColumns="False"
+    HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="100px" 
+        Width="500px" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+    <Columns>
+
+        <asp:BoundField DataField="id" HeaderText="Id" />
+
+    <asp:BoundField HeaderText = "Descrição" DataField="descricao" />
+    <asp:TemplateField HeaderText="Video">
+    <ItemTemplate>
+        <video width="200" height="160" controls>
+  <source src='<%# "VideoHandler.ashx?VidID="+ Eval("id")%>' type="video/mp4"/>
+</video>
     </ItemTemplate>
     </asp:TemplateField>
         <asp:ButtonField CommandName="Curtir" Text="Curtir" />

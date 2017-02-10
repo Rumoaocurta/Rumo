@@ -36,6 +36,7 @@
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Administrador/ConfirmarPublicacao.aspx">Confirmar Publucações de usuários</asp:HyperLink><br/>
                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Administrador/AddEvento.aspx">Postar Evento</asp:HyperLink><br/>
                     <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Administrador/PostarFoto.aspx">Postar Foto</asp:HyperLink><br/>
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Administrador/PostarVideo.aspx">Postar Vídeo</asp:HyperLink><br/>
                 </td>
                 
                 <td>&nbsp;</td>

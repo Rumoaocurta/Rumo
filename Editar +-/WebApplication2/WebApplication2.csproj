@@ -60,6 +60,7 @@
     <Content Include="AcessoPublico\WebFormLoginCreate.aspx" />
     <Content Include="Administrador\AddEvento.aspx" />
     <Content Include="Administrador\PostarFoto.aspx" />
+    <Content Include="Administrador\PostarVideo.aspx" />
     <Content Include="Detalhes.aspx" />
     <Content Include="EditarComentrio.aspx" />
     <Content Include="JoeUser\ErroNãoÉADM.aspx" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="Administrador\PostarFoto.aspx.designer.cs">
       <DependentUpon>PostarFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\PostarVideo.aspx.cs">
+      <DependentUpon>PostarVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\PostarVideo.aspx.designer.cs">
+      <DependentUpon>PostarVideo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Detalhes.aspx.cs">
       <DependentUpon>Detalhes.aspx</DependentUpon>
@@ -247,6 +255,9 @@
     <Compile Include="JoeUser\Favoritos.aspx.designer.cs">
       <DependentUpon>Favoritos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="VideoHandler.ashx.cs">
+      <DependentUpon>VideoHandler.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcessoPublico\Web.config" />
@@ -254,6 +265,7 @@
     <Content Include="ImagemHandler.ashx" />
     <Content Include="Administrador\imagem.ashx" />
     <Content Include="JoeUser\imagemfav.ashx" />
+    <Content Include="VideoHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

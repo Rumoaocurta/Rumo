@@ -25,13 +25,21 @@ namespace WebApplication2
         private void VincularDados()
         {
             SqlConnection connection = new SqlConnection(strcon);
-            SqlCommand command = new SqlCommand("SELECT descricao, id from Fotos3 order by id desc", connection);
+            SqlCommand command = new SqlCommand("SELECT top 10 descricao, id from Fotos3 order by id desc", connection);
             SqlDataAdapter daimages = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             daimages.Fill(dt);
             gdvImagens.DataSource = dt;
             gdvImagens.DataBind();
             gdvImagens.Attributes.Add("bordercolor", "black");
+
+            SqlCommand video = new SqlCommand("SELECT top 10 descricao, id from Videos1 order by id desc", connection);
+            SqlDataAdapter davideos = new SqlDataAdapter(video);
+            DataTable dtv = new DataTable();
+            davideos.Fill(dtv);
+            gdvVideos.DataSource = dtv;
+            gdvVideos.DataBind();
+            gdvVideos.Attributes.Add("bordercolor", "black");
         }
 
         protected void gdvImagens_RowCommand(object sender, GridViewCommandEventArgs e)
