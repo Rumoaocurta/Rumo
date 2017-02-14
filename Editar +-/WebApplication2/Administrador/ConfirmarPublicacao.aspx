@@ -4,14 +4,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" DataKeyNames="id" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" DataKeyNames="id">
         <Columns>
 
         <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
 
             <asp:BoundField HeaderText = "descricao" DataField="descricao" SortExpression="descricao" />
-            <asp:BoundField HeaderText = "nome" DataField="nome" SortExpression="nome" />
-            <asp:TemplateField HeaderText="Imagem">
+            <asp:BoundField HeaderText = "Usuario" DataField="usuario" />
+            <asp:TemplateField HeaderText="Publicação">
             <ItemTemplate>
             <asp:Image ID="Image1" runat="server" 
                     ImageUrl='<%# "imagem.ashx?imagemID="+ Eval("id") %>' Height="45px" 

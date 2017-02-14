@@ -12,8 +12,6 @@ namespace WebApplication2
     /// </summary>
     public class ImagemHandler : IHttpHandler
     {
-
-
         string strcon = ConfigurationManager.ConnectionStrings["Fotos"].ConnectionString;
 
         public void ProcessRequest(HttpContext context)
@@ -21,7 +19,7 @@ namespace WebApplication2
             string imagemID = context.Request.QueryString["ImgID"];
             SqlConnection connection = new SqlConnection(strcon);
             connection.Open();
-            SqlCommand command = new SqlCommand("select imagem from Fotos3 where id=" + imagemID, connection);
+            SqlCommand command = new SqlCommand("select conteudo from Publicacao where id=" + imagemID + " and tipo = 'imagem' and estado = 1", connection);
             SqlDataReader dr = command.ExecuteReader();
             dr.Read();
             context.Response.BinaryWrite((Byte[])dr[0]);

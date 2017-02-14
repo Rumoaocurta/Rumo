@@ -17,22 +17,22 @@ namespace WebApplication2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (!IsPostBack)
+            if (!IsPostBack)
             {
                 VincularDados();
-            }*/
+            }
         }
-        /*private void VincularDados()
+        private void VincularDados()
         {
             SqlConnection connection = new SqlConnection(strcon);
-            SqlCommand command = new SqlCommand("SELECT id, descricao, nome from EnvioDosUsuariosFoto2 order by id desc", connection);
+            SqlCommand command = new SqlCommand("SELECT descricao, id, usuario from Publicacao where estado = 0 order by id desc", connection);
             SqlDataAdapter daimages = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             daimages.Fill(dt);
-            GridView2.DataSource = dt;
-            GridView2.DataBind();
-            GridView2.Attributes.Add("bordercolor", "black");
-        }*/
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+            GridView1.Attributes.Add("bordercolor", "black");
+        }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {

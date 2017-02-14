@@ -19,14 +19,13 @@ namespace WebApplication2
             string videoID = context.Request.QueryString["VidID"];
             SqlConnection connection = new SqlConnection(strcon);
             connection.Open();
-            SqlCommand command = new SqlCommand("select video from Videos1 where id=" + videoID, connection);
+            SqlCommand command = new SqlCommand("select conteudo from Publicacao where id=" + videoID + " and tipo = 'video' and estado = 1", connection);
             SqlDataReader dr = command.ExecuteReader();
             dr.Read();
             context.Response.BinaryWrite((Byte[])dr[0]);
             connection.Close();
             context.Response.End();
         }
-
         public bool IsReusable
         {
             get

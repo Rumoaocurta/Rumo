@@ -8,13 +8,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication2
+namespace WebApplication2.Administrador
 {
-    public partial class WebForm11 : System.Web.UI.Page
+    public partial class PostarPublicacao : System.Web.UI.Page
     {
-
         string strcon = ConfigurationManager.ConnectionStrings["Fotos"].ConnectionString;
-
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,7 +37,7 @@ namespace WebApplication2
                 connection.Open();
                 if (testeArquivo == "image/png" || testeArquivo == "image/jpeg")
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Publicacao (descricao, conteudo, tipo, estado, usuario) VALUES (@descricao, @conteudo, @tipo, 0, @usuario)", connection);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Publicacao (descricao, conteudo, tipo, estado, usuario) VALUES (@descricao, @conteudo, @tipo, 1, @usuario)", connection);
                     cmd.Parameters.Add("@descricao", descricaoImagem);
                     cmd.Parameters.Add("@conteudo", SqlDbType.Image).Value = imgbyte;
                     cmd.Parameters.Add("@tipo", "imagem");
@@ -54,7 +52,7 @@ namespace WebApplication2
                 }
                 if (testeArquivo == "video/mp4")
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Publicacao (descricao, conteudo, tipo, estado, usuario) VALUES (@descricao, @conteudo, @tipo, 0, @usuario)", connection);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Publicacao (descricao, conteudo, tipo, estado, usuario) VALUES (@descricao, @conteudo, @tipo, 1, @usuario)", connection);
                     cmd.Parameters.Add("@descricao", descricaoImagem);
                     cmd.Parameters.Add("@conteudo", SqlDbType.Image).Value = imgbyte;
                     cmd.Parameters.Add("@tipo", "video");
@@ -70,19 +68,10 @@ namespace WebApplication2
             }
             else
             {
-                
+
                 LabelErro.Text = "Erro! Verifique se o arquivo está no formato correto e se o campo de Descrição não está vazio";
             }
 
         }
-      }
-
-   }
-
-
-
-       
-
-
-
-
+    }
+}

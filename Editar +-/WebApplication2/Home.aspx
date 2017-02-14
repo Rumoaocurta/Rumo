@@ -57,13 +57,14 @@
     <td class="auto-style15"> 
        
         <asp:GridView ID="gdvImagens" CssClass="Gridview" runat="server" AutoGenerateColumns="False"
-    HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="350px" 
+    HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="100px" 
         Width="500px" OnRowCommand="gdvImagens_RowCommand" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
     <Columns>
 
         <asp:BoundField DataField="id" HeaderText="Id" />
 
     <asp:BoundField HeaderText = "Descrição" DataField="descricao" />
+    <asp:BoundField HeaderText = "Usuário" DataField="usuario" />
     <asp:TemplateField HeaderText="Imagem">
     <ItemTemplate>
     <asp:Image ID="Image1" runat="server" 
@@ -101,9 +102,9 @@
         Width="500px" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
     <Columns>
 
-        <asp:BoundField DataField="id" HeaderText="Id" />
-
+    <asp:BoundField DataField="id" HeaderText="Id" />
     <asp:BoundField HeaderText = "Descrição" DataField="descricao" />
+    <asp:BoundField HeaderText = "Usuário" DataField="usuario" />
     <asp:TemplateField HeaderText="Video">
     <ItemTemplate>
         <video width="200" height="160" controls>

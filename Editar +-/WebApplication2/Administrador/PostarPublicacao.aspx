@@ -1,32 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="EnvioDeUsuario.aspx.cs" Inherits="WebApplication2.WebForm11" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="PostarPublicacao.aspx.cs" Inherits="WebApplication2.Administrador.PostarPublicacao" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-
-    
-    <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <title></title>
-        <style type="text/css">
-            .erro {
-                color:red;
-            }
-        </style>
-</head>
-<body>
-
-    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Menu</asp:HyperLink><br/><br/><h3>Detalhes do seu envio</h3>
-
-
-
-
-
-
-
-        <table style="width: 100%;">
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/ADMHome.aspx">Voltar</asp:HyperLink><br/><br/><h3>Envie a publicação</h3>
+    <table style="width: 100%;">
             <tr>
                 <td></td>
                 <td>Descrição:</td>
@@ -49,8 +26,4 @@
                 
             </tr>
         </table>
-    </body>
-</html>
-
-
 </asp:Content>

@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2 {
+namespace WebApplication2.Administrador {
     
     
-    public partial class WebForm5 {
+    public partial class PostarPublicacao {
         
         /// <summary>
         /// HyperLink1 control.
@@ -49,12 +49,12 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Button btnUpload;
         
         /// <summary>
-        /// HyperLink2 control.
+        /// LabelErro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.Label LabelErro;
     }
 }
