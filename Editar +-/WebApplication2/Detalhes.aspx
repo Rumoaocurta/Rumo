@@ -12,6 +12,17 @@
     </asp:TemplateField>
     </Columns>
     </asp:GridView>
+    <asp:GridView ID="gdvVideo" runat="server" AutoGenerateColumns="False" ShowHeader="False">
+    <Columns>
+    <asp:TemplateField>
+    <ItemTemplate>
+    <video width="200" height="160" controls>
+  <source src='<%# "VideoHandler.ashx?VidID="+ Eval("id")%>' type="video/mp4"/>
+</video>
+    </ItemTemplate>
+    </asp:TemplateField>
+    </Columns>
+    </asp:GridView>
     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Times New Roman" Text="Envie um comentário"></asp:Label>
     <br />
     <asp:TextBox ID="comentario" runat="server"></asp:TextBox><asp:Button ID="Button2" runat="server" Text="Enviar" OnClick="Button2_Click" />

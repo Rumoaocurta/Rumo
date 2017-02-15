@@ -5,29 +5,27 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication2
+namespace WebApplication2.Administrador
 {
     /// <summary>
-    /// Summary description for imagem
+    /// Summary description for video
     /// </summary>
-    public class imagem : IHttpHandler
+    public class video : IHttpHandler
     {
-
-
         string strcon = ConfigurationManager.ConnectionStrings["Fotos"].ConnectionString;
-
         public void ProcessRequest(HttpContext context)
         {
-            string imagemID = context.Request.QueryString["imagemID"];
+            string videoID = context.Request.QueryString["VidID"];
             SqlConnection connection = new SqlConnection(strcon);
             connection.Open();
-            SqlCommand command = new SqlCommand("select conteudo from Publicacao where id=" + imagemID, connection);
+            SqlCommand command = new SqlCommand("select conteudo from Publicacao where id=" + videoID, connection);
             SqlDataReader dr = command.ExecuteReader();
             dr.Read();
             context.Response.BinaryWrite((Byte[])dr[0]);
             connection.Close();
             context.Response.End();
         }
+
         public bool IsReusable
         {
             get

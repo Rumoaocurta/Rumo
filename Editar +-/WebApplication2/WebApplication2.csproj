@@ -62,7 +62,10 @@
     <Content Include="Administrador\PostarPublicacao.aspx" />
     <Content Include="Detalhes.aspx" />
     <Content Include="EditarComentrio.aspx" />
+    <Content Include="JoeUser\EditarFoto.aspx" />
+    <Content Include="JoeUser\EditarVideo.aspx" />
     <Content Include="JoeUser\ErroNãoÉADM.aspx" />
+    <Content Include="JoeUser\PubsUsuario.aspx" />
     <Content Include="Login1.aspx" />
     <Content Include="Administrador\Eventos.aspx" />
     <Content Include="Index.aspx" />
@@ -111,6 +114,9 @@
     <Compile Include="Administrador\PostarPublicacao.aspx.designer.cs">
       <DependentUpon>PostarPublicacao.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\video.ashx.cs">
+      <DependentUpon>video.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Detalhes.aspx.cs">
       <DependentUpon>Detalhes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +134,20 @@
     <Compile Include="Administrador\imagem.ashx.cs">
       <DependentUpon>imagem.ashx</DependentUpon>
     </Compile>
+    <Compile Include="JoeUser\EditarFoto.aspx.cs">
+      <DependentUpon>EditarFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoeUser\EditarFoto.aspx.designer.cs">
+      <DependentUpon>EditarFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoeUser\EditarVideo.aspx.cs">
+      <DependentUpon>EditarVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoeUser\EditarVideo.aspx.designer.cs">
+      <DependentUpon>EditarVideo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JoeUser\imagemfav.ashx.cs">
       <DependentUpon>imagemfav.ashx</DependentUpon>
     </Compile>
@@ -140,6 +160,13 @@
     </Compile>
     <Compile Include="ImagemHandler.ashx.cs">
       <DependentUpon>ImagemHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="JoeUser\PubsUsuario.aspx.cs">
+      <DependentUpon>PubsUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoeUser\PubsUsuario.aspx.designer.cs">
+      <DependentUpon>PubsUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login1.aspx.cs">
       <DependentUpon>Login1.aspx</DependentUpon>
@@ -258,6 +285,7 @@
     <Content Include="Administrador\imagem.ashx" />
     <Content Include="JoeUser\imagemfav.ashx" />
     <Content Include="VideoHandler.ashx" />
+    <Content Include="Administrador\video.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

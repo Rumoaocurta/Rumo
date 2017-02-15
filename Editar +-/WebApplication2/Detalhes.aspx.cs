@@ -15,8 +15,6 @@ namespace WebApplication2
         string strcon = ConfigurationManager.ConnectionStrings["Fotos"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string codigo = Request.QueryString["id_foto"];
-            Session["id"] = codigo;
             if (!IsPostBack)
             {
                 VincularDados();
@@ -24,9 +22,9 @@ namespace WebApplication2
         }
         private void VincularDados()
         {
-            string codigo = Request.QueryString["id_foto"];
+            string codigo = Request.QueryString["id"];
             SqlConnection connection = new SqlConnection(strcon);
-            SqlCommand command = new SqlCommand("SELECT id from Fotos3 where id = " + codigo, connection);
+            SqlCommand command = new SqlCommand("SELECT id from Publicacao where id = " + codigo, connection);
             SqlDataAdapter daimages = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             daimages.Fill(dt);

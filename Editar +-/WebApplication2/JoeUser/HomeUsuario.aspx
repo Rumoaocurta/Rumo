@@ -13,6 +13,7 @@
     <div>
     Página para Usuario<br/>
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/JoeUser/usuario.aspx">Editar perfil</asp:HyperLink><br/>
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/JoeUser/PubsUsuario.aspx">Ver suas publicações</asp:HyperLink><br/>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/JoeUser/Favoritos.aspx">Lista de favoritos</asp:HyperLink><br/>
         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/JoeUser/EnvioDeUsuario.aspx">Enviar foto para o Rumo ao Curta</asp:HyperLink><br/>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Menu</asp:HyperLink>

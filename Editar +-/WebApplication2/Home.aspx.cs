@@ -104,19 +104,9 @@ namespace WebApplication2
             if (e.CommandName == "Comentarios")
             {
                 string codigo;
-
-                // Le o numero da linha selecionada
                 int index = Convert.ToInt32(e.CommandArgument);
-
-                // Copia o conteúdo da primeira célula da linha
                 codigo = gdvImagens.Rows[index].Cells[0].Text;
-
-                
-                // Grava código na sessão
-                Session["foto_id"] = codigo;
-
-                // Chama a tela de edição
-                Response.Redirect("~\\Detalhes.aspx?id_foto=" + codigo);
+                Response.Redirect("~\\Detalhes.aspx?id=" + codigo);
             }
             if (e.CommandName == "Favoritar")
             {
