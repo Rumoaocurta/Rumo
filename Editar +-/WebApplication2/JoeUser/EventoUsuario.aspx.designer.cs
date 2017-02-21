@@ -13,15 +13,6 @@ namespace WebApplication2 {
     public partial class WebForm4 {
         
         /// <summary>
-        /// HyperLink1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-        
-        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
         /// SqlDataSource1 control.

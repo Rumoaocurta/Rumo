@@ -2,17 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style7 {
-            width: 301px;
+            width: 334px;
         }
         .auto-style10 {
             height: 33px;
         }
         .auto-style11 {
-            width: 276px;
+            width: 209px;
             height: 33px;
         }
         .auto-style13 {
-            width: 276px;
+            width: 209px;
         }
         .auto-style15 {
             width: 476px;
@@ -47,18 +47,17 @@
             <tr>
                 <td class="auto-style13">&nbsp;</td>
                 
-                <td>&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
             </tr>
           </table>
         <table>
     <tr><td class="auto-style16"> &nbsp;</td>
-    <td class="auto-style15"> Imagens:</td>
     </tr><tr><td class="auto-style16">&nbsp;</td>
     <td class="auto-style15"> 
        
         <asp:GridView ID="gdvImagens" CssClass="Gridview" runat="server" AutoGenerateColumns="False"
     HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="100px" 
-        Width="500px" OnRowCommand="gdvImagens_RowCommand" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+        Width="500px" OnRowCommand="gdvImagens_RowCommand" DataKeyNames="id" BackColor="black" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="White" GridLines="Horizontal">
     <Columns>
 
         <asp:BoundField DataField="id" HeaderText="Id" />
@@ -68,8 +67,8 @@
     <asp:TemplateField HeaderText="Imagem">
     <ItemTemplate>
     <asp:Image ID="Image1" runat="server" 
-            ImageUrl='<%# "ImagemHandler.ashx?ImgID="+ Eval("id") %>' Height="45px" 
-            Width="52px"/>
+            ImageUrl='<%# "ImagemHandler.ashx?ImgID="+ Eval("id") %>' Height="65px" 
+            Width="70px"/>
     </ItemTemplate>
     </asp:TemplateField>
         <asp:ButtonField CommandName="Curtir" Text="Curtir" />
@@ -92,14 +91,14 @@
     </tr><tr><td class="auto-style16">
     </td>
     <td class="auto-style15">
-        Videos:</td>
+        </td>
     </tr>
             <tr><td class="auto-style16">&nbsp;</td>
     <td class="auto-style15"> 
        
         <asp:GridView ID="gdvVideos" CssClass="Gridview" runat="server" AutoGenerateColumns="False"
     HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="100px" 
-        Width="500px" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnRowCommand="gdvVideos_RowCommand">
+        Width="500px" DataKeyNames="id" BackColor="black" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="White" GridLines="Horizontal" OnRowCommand="gdvVideos_RowCommand">
     <Columns>
 
     <asp:BoundField DataField="id" HeaderText="Id" />

@@ -30,15 +30,15 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style8">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Voltar</asp:HyperLink>
+                    
                 </td>
-                <td class="auto-style7"><h1>&nbsp;&nbsp;&nbsp; EVENTOS</h1></td>
+                <td class="auto-style7"><h3>&nbsp;&nbsp;&nbsp; EVENTOS</h3></td>
                 <td class="auto-style6"></td>
             </tr>
             <tr>
                 <td class="auto-style8">&nbsp;</td>
                 <td class="auto-style7">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="223px" DataKeyNames="ID" OnRowCommand="GridView1_RowCommand">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="678px" DataKeyNames="ID" OnRowCommand="GridView1_RowCommand" Height="373px">
                         <Columns>
                             <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" InsertVisible="False" ReadOnly="True" />
                             <asp:BoundField DataField="Nome" HeaderText="Nome" SortExpression="Nome" />
@@ -47,6 +47,7 @@
                         </Columns>
                     </asp:GridView>
                 </td>
+                
                 <td class="auto-style6">&nbsp;</td>
             </tr>
             <tr>
@@ -56,6 +57,7 @@
             </tr>
         </table>
         <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Voltar</asp:HyperLink>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Evento %>" SelectCommand="select id as ID, nomeEvento as Nome, resumo as Resumo from Eventos1 order by id desc">
         </asp:SqlDataSource>
     

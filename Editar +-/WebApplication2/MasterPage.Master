@@ -50,7 +50,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- EVENTOS -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">RUMO AO CURTA</h2>
+    <h1 class="w3-wide">RUMO AO CURTA</h1>
       <p class="w3-opacity">O site mais legal que você verá hoje!</p>
         <table style="width: 100%;">
           <tr>
@@ -60,7 +60,6 @@ body {font-family: "Lato", sans-serif}
         </table> 
  
     <p class="w3-opacity"><i>Melhor site para publicação de eventos</i></p>
-    <p class="w3-justify">Descubra como milhares de profissionais aumentaram seu público e revolucionaram a maneira de promover seus eventos.</p>
     <div class="w3-row w3-padding-32">
        <div class="w3-third">
         <p>Expotec 2016 - IFRN(CNAT)</p>
