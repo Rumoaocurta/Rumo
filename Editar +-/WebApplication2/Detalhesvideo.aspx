@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Detalhes.aspx.cs" Inherits="WebApplication2.Detalhes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Detalhesvideo.aspx.cs" Inherits="WebApplication2.Detalhesvideo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -9,23 +9,24 @@
             }
         </style>
     </head>
-<asp:GridView ID="gdvImagem" runat="server" AutoGenerateColumns="False" ShowHeader="False" PageSize="1">
+    <asp:GridView ID="gdvVideo" runat="server" AutoGenerateColumns="False" ShowHeader="False">
     <Columns>
     <asp:TemplateField>
     <ItemTemplate>
-    <asp:Image ID="Image1" runat="server" 
-            ImageUrl='<%# "ImagemHandler.ashx?ImgID="+ Eval("id") %>' Height ="300px" Width ="400px"/>
+    <video width="300" height="240" controls>
+  <source src='<%# "VideoHandler.ashx?VidID="+ Eval("id")%>' type="video/mp4"/>
+</video>
     </ItemTemplate>
     </asp:TemplateField>
     </Columns>
-    </asp:GridView><br />
+    </asp:GridView>
+    <br />
     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Times New Roman" Text="Envie um comentário"></asp:Label>
     <br />
-    <asp:TextBox ID="comentario" runat="server"></asp:TextBox><asp:Button ID="Button2" runat="server" Text="Enviar" OnClick="Button2_Click" />
-
-    <br />
-    <asp:Label ID="Label2" runat="server" CssClass="erro"></asp:Label>
-
+    <asp:TextBox ID="comentario" runat="server"></asp:TextBox>
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enviar" />
+    <br /> <asp:Label ID="Label2" runat="server" CssClass="erro"></asp:Label><br />
+    
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" SortExpression="id" />

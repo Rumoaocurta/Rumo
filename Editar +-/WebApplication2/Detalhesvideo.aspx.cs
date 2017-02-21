@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication2
 {
-    public partial class Detalhes : System.Web.UI.Page
+    public partial class Detalhesvideo : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["Fotos"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
@@ -24,15 +24,15 @@ namespace WebApplication2
         {
             string codigo = Request.QueryString["id"];
             SqlConnection connection = new SqlConnection(strcon);
-            SqlCommand command = new SqlCommand("SELECT id from Publicacao where id = " + codigo, connection);
-            SqlDataAdapter daimages = new SqlDataAdapter(command);
+            SqlCommand command = new SqlCommand("SELECT id from Publicacao where id =" + codigo, connection);
+            SqlDataAdapter davideo = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
-            daimages.Fill(dt);
-            gdvImagem.DataSource = dt;
-            gdvImagem.DataBind();
+            davideo.Fill(dt);
+            gdvVideo.DataSource = dt;
+            gdvVideo.DataBind();
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             string codigo = Request.QueryString["id"];
             SqlConnection aSQLCon = new SqlConnection(strcon);
@@ -45,7 +45,7 @@ namespace WebApplication2
                 aSQL.Parameters.AddWithValue("@conteudo", comentario.Text);
                 aSQL.Parameters.AddWithValue("@pub_id", codigo);
                 aSQL.ExecuteNonQuery();
-                Response.Redirect("~/Detalhes.aspx?id=" + codigo);
+                Response.Redirect("~/Detalhesvideo.aspx?id=" + codigo);
             }
             else
             {

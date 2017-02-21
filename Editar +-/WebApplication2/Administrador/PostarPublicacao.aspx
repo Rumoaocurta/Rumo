@@ -2,6 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <head>
+        <style type="text/css">
+            .erro {
+                color:red;
+            }
+        </style>
+    </head>
     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administrador/ADMHome.aspx">Voltar</asp:HyperLink><br/><br/><h3>Envie a publicação</h3>
     <table style="width: 100%;">
             <tr>

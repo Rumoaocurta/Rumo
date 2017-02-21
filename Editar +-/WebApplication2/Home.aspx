@@ -99,7 +99,7 @@
        
         <asp:GridView ID="gdvVideos" CssClass="Gridview" runat="server" AutoGenerateColumns="False"
     HeaderStyle-BackColor="#7779AF" HeaderStyle-ForeColor="white" Height="100px" 
-        Width="500px" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+        Width="500px" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnRowCommand="gdvVideos_RowCommand">
     <Columns>
 
     <asp:BoundField DataField="id" HeaderText="Id" />

@@ -61,6 +61,7 @@
     <Content Include="Administrador\AddEvento.aspx" />
     <Content Include="Administrador\PostarPublicacao.aspx" />
     <Content Include="Detalhes.aspx" />
+    <Content Include="Detalhesvideo.aspx" />
     <Content Include="EditarComentrio.aspx" />
     <Content Include="JoeUser\EditarFoto.aspx" />
     <Content Include="JoeUser\EditarVideo.aspx" />
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="Detalhes.aspx.designer.cs">
       <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalhesvideo.aspx.cs">
+      <DependentUpon>Detalhesvideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalhesvideo.aspx.designer.cs">
+      <DependentUpon>Detalhesvideo.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarComentrio.aspx.cs">
       <DependentUpon>EditarComentrio.aspx</DependentUpon>
